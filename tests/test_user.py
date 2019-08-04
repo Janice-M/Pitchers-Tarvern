@@ -14,7 +14,7 @@ class UserModelTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_user = User(password = 'liz')
+        self.new_user = User(password = 'grey')
 
 
     def test_password_setter(self):
@@ -27,4 +27,4 @@ class UserModelTest(unittest.TestCase):
 
 
     def test_password_verify(self):
-        self.assertTrue(self.new_user.verify_password('liz'))
+        self.assertTrue(self.new_user.verify_password('grey'))
