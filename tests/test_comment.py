@@ -5,8 +5,8 @@ from app import db
 class TestPitch(unittest.TestCase):
 
     def setUp(self):
-        self.new_pitch = Pitch(pitch_content = "pitch one", pitch_category='Business')
-        self.new_comment = Comment(comment_content = "One comment", pitch=self.new_pitch)
+        self.new_pitch = Pitch(pitch_content = "pitcher", pitch_category='Bizna')
+        self.new_comment = Comment(comment_content = "comment", pitch=self.new_pitch)
     
     def tearDown(self):
         db.session.delete(self)
@@ -18,5 +18,5 @@ class TestPitch(unittest.TestCase):
 
 
     def test_check_instance_variables(self):
-        self.assertEquals(self.new_comment.comment_content,"One comment")
-        self.assertEquals(self.new_comment.pitch,self.new_pitch, 'pitch one')
+        self.assertEquals(self.new_comment.comment_content,"comment")
+        self.assertEquals(self.new_comment.pitch,self.new_pitch, 'pitcher')
