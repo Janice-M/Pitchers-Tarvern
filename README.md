@@ -4,7 +4,7 @@
 
 
 # Author
-  **[Wanjiiru](https://github.com/wanjiiru)**
+  **[Janice](https://github.com/Janice-M)**
 
 
 ## Link to Live Site 
