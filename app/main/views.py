@@ -16,7 +16,7 @@ def index():
     Root page functions that return the home page and its data
     '''
     pitch = Pitch.query.filter_by().first()
-    title = 'Home'
+    title = 'Welcome Home Rafiki'
     pickuplines = Pitch.query.filter_by(category="pickuplines")
     interviewpitch = Pitch.query.filter_by(category = "interviewpitch")
     promotionpitch = Pitch.query.filter_by(category = "promotionpitch")
