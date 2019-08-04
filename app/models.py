@@ -133,11 +133,13 @@ class Downvote(db.Model):
 
     
     @classmethod
+    
     def get_downvotes(cls,id):
         downvote = Downvote.query.filter_by(pitch_id=id).all()
         return downvote
 
     @classmethod
+    
     def get_all_downvotes(cls,pitch_id):
         downvote = Downvote.query.order_by('id').all()
         return downvote
