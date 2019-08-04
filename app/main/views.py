@@ -8,12 +8,12 @@ from .. import db
 import markdown2
 
 
-# Views
+
 @main.route('/', methods = ['GET','POST'])
 def index():
 
     '''
-    View root page function that returns the index page and its data
+    Root page functions that return the home page and its data
     '''
     pitch = Pitch.query.filter_by().first()
     title = 'Home'
@@ -71,6 +71,7 @@ def new_comment(pitch_id):
     all_comments = Comment.query.filter_by(pitch_id = pitch_id).all()
     return render_template('comments.html', form = form, comment = all_comments, pitch = pitch )
 
+    """ The above allows you to add a comment in all the categories """
 
 @main.route('/pitch/upvote/<int:pitch_id>/upvote', methods = ['GET', 'POST'])
 @login_required
@@ -89,9 +90,6 @@ def upvote(pitch_id):
 
 
 
-#    new_upvote = Upvote(user=current_user, pitch=pitch, vote_number=1)
-#    new_vote.save_vote()
-# return redirect(url_for('main.index'))
 
 
 @main.route('/pitch/downvote/<int:pitch_id>/downvote', methods = ['GET', 'POST'])
