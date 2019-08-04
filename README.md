@@ -77,4 +77,4 @@ https://pitchhere.herokuapp.com/
 No known bugs so far
 
 ## Support Details
-Contact me for further help# Pitchers-Tarvern
+You can reach me on janiceink001@gmail.com
