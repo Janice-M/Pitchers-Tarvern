@@ -7,5 +7,5 @@ def four_Ow_four(error):
     '''
     Function to render the 404 error page
     '''
-    title = '404 page'
+    title = 'Rafiki, it seems you have an oopsie, hold on one second'
     return render_template('fourOwfour.html', title=title),404
