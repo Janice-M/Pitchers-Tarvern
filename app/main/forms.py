@@ -9,15 +9,15 @@ class PitchForm(FlaskForm):
 	title = StringField('Title', validators=[Required()])
 	description = TextAreaField("Rafiki, what pitch ideas would you love to share?",validators=[Required()])
 	category = RadioField('Label', choices=[ ('promotionpitch','promotionpitch'), ('interviewpitch','interviewpitch'),('alineforyourcrush','alineforyourcrush'),('businesspitch','businesspitch')],validators=[Required()])
-	submit = SubmitField('Submit')
+	submit = SubmitField('Submit:)')
 
 class CommentForm(FlaskForm):
 	description = TextAreaField('What do you think?',validators=[Required()])
 	submit = SubmitField()
 
 class UpvoteForm(FlaskForm):
-	submit = SubmitField()
+	submit = SubmitField('Submit:)')
 
 
 class Downvote(FlaskForm):
-	submit = SubmitField()
+	submit = SubmitField('Submit:)')
