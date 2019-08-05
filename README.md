@@ -1,6 +1,8 @@
-# PitchHere
-## A web application that lets users submit pitches based on different categories
-### June 22nd, 2018
+# Pitch Tarvern
+
+ This is python web based application that allows you to wow your audience in 60 seconds by presenting you with a platform to be able to post short snippets of text of various categories and get upvotes and downvotes.
+
+#### 5-August-2019
 
 
 # Author
@@ -19,7 +21,6 @@ https://greys-pitchtarvern.herokuapp.com/
 ## Installation Requirements
   Clone this repository and navigate to the folder.
   Run the following commands to allow functionality of the app:-
-  * sudo add-apt-repository ppa:jonathonf/python-3.6
   * sudo apt-get update
   * sudo apt-get install python3.6
   * sudo apt-get install python3-pip
@@ -59,17 +60,18 @@ https://greys-pitchtarvern.herokuapp.com/
 
 
 ## User Stories
+  * A user creates an account then logs into the web app
   * A user can see the pitches posted by other people
-  * A user can eithr downvote or upvote on a pitch as long as they are signed in.
+  * A user can  downvote or upvote on a pitch as long as they are signed in.
   * A user can add comment on the different pitches .
   * A user can view and submit pitches by category.
 
 ## Technologies Used
-  * Python 3.6.5
-  * HTML5, CSS and Bootstrap
+  * Python 3.6.
+  * HTML5, CSS && Bootstrap
   * Flask Framework
   * Postgressql
-  * Heroku
+  * Heroku for deployment
 
 ## Known Bugs
 No known bugs so far
