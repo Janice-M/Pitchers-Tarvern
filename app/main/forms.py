@@ -12,7 +12,7 @@ class PitchForm(FlaskForm):
 	submit = SubmitField('Submit')
 
 class CommentForm(FlaskForm):
-	description = TextAreaField('Please add comment Rafiki',validators=[Required()])
+	description = TextAreaField('What do you think?',validators=[Required()])
 	submit = SubmitField()
 
 class UpvoteForm(FlaskForm):
