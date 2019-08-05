@@ -20,12 +20,12 @@ def index():
     alineforyourcrush = Pitch.query.filter_by(category="alineforyourcrush")
     interviewpitch = Pitch.query.filter_by(category = "interviewpitch")
     promotionpitch = Pitch.query.filter_by(category = "promotionpitch")
-    productpitch = Pitch.query.filter_by(category = "productpitch")
+    businesspitch = Pitch.query.filter_by(category = "businesspitch")
 
     upvotes = Upvote.get_all_upvotes(pitch_id=Pitch.id)
     
 
-    return render_template('home.html', title = title, pitch = pitch, alineforyourcrush=alineforyourcrush, interviewpitch= interviewpitch, promotionpitch = promotionpitch, productpitch = productpitch, upvotes=upvotes)
+    return render_template('home.html', title = title, pitch = pitch, alineforyourcrush=alineforyourcrush, interviewpitch= interviewpitch, promotionpitch = promotionpitch, businesspitch = businesspitch, upvotes=upvotes)
     
 
 
