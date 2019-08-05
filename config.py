@@ -1,12 +1,20 @@
 import os
 
 class Config:
+    SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
 
     '''
     General configuration parent class
     '''
-    SECRET_KEY = 'wamlambez69'
-    SQLALCHEMY_TRACK_MODIFICATIONS = True
+    SECRET_KEY = os.environ.get("SECRET_KEY")
+    MAIL_SERVER = 'smtp.mail.google.com'
+    MAIL_PORT = 587
+    MAIL_USE_TLS = True
+    MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
+    MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
+    SUBJECT_PREFIX = 'PITCH'
+    SENDER_EMAIL = 'kokonutkoala@gmail.com'
+
 
 
 
@@ -35,7 +43,6 @@ class DevConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://liz:lizzie@localhost/pitch'
     DEBUG = True
 
 
