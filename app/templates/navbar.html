@@ -1,6 +1,7 @@
 
-    <div class="navbar navbar-dark bg-primary" role="navigation">
-        <div class="container">
+    <div class="navbar navbar-dark bg-primary" role="navigation" >
+        <div class="container" style="text-align: center; color: aliceblue; font-family: 'Roboto Condensed', sans-serif;
+        ">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                   <span class="sr-only">Toggle navigation</span>
@@ -9,21 +10,17 @@
                   <span class="icon-bar"></span>
                 </button>
                 <ul>
-                <a style="text-align: center; color: aliceblue;" class="navbar-brand" href="/pitches/new/"> Post a Pitch </a>
+                <a style="text-align: center; color: aliceblue; font-family: 'Roboto Condensed', sans-serif;" class="navbar-brand" href="/pitches/new/"> Pitch here Rafiki </a>
                 </ul>
-            </div>
-            <div class="navbar-nav">
-                <a style="text-align: center; color: aliceblue;" class="navbar-brand" href="/"> Home </a>
-
-            </div>
+              </div>
 
             <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               {% if current_user.is_authenticated %}
-              <li style="color:whitesmoke">{{current_user.username}}</li>
-              <li><a style="color: whitesmoke;"  href="{{url_for('auth.logout')}}">Sign out Rafiki</a></li>
+              <li style="color:whitesmoke; font-family:'Roboto Condensed', sans-serif;">{{current_user.username}}</li>
+              <li><a style="color: whitesmoke; font-family: 'Roboto Condensed', sans-serif;"  href="{{url_for('auth.logout')}}">Sign out Rafiki</a></li>
               {% else %}
-              <li><a style="color: whitesmoke;" href="{{url_for('auth.login')}}">Sign in Rafiki</a></li>
+              <li><a style="color: whitesmoke; font-family: 'Roboto Condensed', sans-serif;" href="{{url_for('auth.login')}}">Sign in Rafiki {{current_user.username}}</a></li>
               {%endif%}
             </ul>
           </div>
