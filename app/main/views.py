@@ -17,7 +17,7 @@ def index():
     '''
     pitch = Pitch.query.filter_by().first()
     title = 'Welcome Home Rafiki'
-    pickuplines = Pitch.query.filter_by(category="pickuplines")
+    alineforyourcrush = Pitch.query.filter_by(category="alineforyourcrush")
     interviewpitch = Pitch.query.filter_by(category = "interviewpitch")
     promotionpitch = Pitch.query.filter_by(category = "promotionpitch")
     productpitch = Pitch.query.filter_by(category = "productpitch")
@@ -25,7 +25,7 @@ def index():
     upvotes = Upvote.get_all_upvotes(pitch_id=Pitch.id)
     
 
-    return render_template('home.html', title = title, pitch = pitch, pickuplines=pickuplines, interviewpitch= interviewpitch, promotionpitch = promotionpitch, productpitch = productpitch, upvotes=upvotes)
+    return render_template('home.html', title = title, pitch = pitch, alineforyourcrush=alineforyourcrush, interviewpitch= interviewpitch, promotionpitch = promotionpitch, productpitch = productpitch, upvotes=upvotes)
     
 
 
@@ -71,7 +71,7 @@ def new_comment(pitch_id):
     all_comments = Comment.query.filter_by(pitch_id = pitch_id).all()
     return render_template('comments.html', form = form, comment = all_comments, pitch = pitch )
 
-    """ The above allows you to add a comment in all the categories """
+    """ The above allows you to add a comment in all the categories of the different pitches"""
 
 @main.route('/pitch/upvote/<int:pitch_id>/upvote', methods = ['GET', 'POST'])
 @login_required
