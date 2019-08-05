@@ -1,8 +1,6 @@
 import os
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
-
     '''
     General configuration parent class
     '''
@@ -14,6 +12,7 @@ class Config:
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
     SUBJECT_PREFIX = 'PITCH'
     SENDER_EMAIL = 'kokonutkoala@gmail.com'
+    SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:grey@localhost/tarvern'
 
 
 
