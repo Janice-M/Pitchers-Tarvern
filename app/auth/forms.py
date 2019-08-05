@@ -14,7 +14,7 @@ class RegistrationForm(FlaskForm):
     password_confirm = PasswordField('Confirm Passwords',validators = [Required()])
     submit = SubmitField('Sign Up')
     
-        """ password and email validation """
+    """ password and email validation """
         
     def validate_email(self,data_field):
             if User.query.filter_by(email =data_field.data).first():

@@ -5,11 +5,8 @@ class Config:
     '''
     General configuration parent class
     '''
-    SECRET_KEY = 'powerfulsecretkey'
+    SECRET_KEY = 'wamlambez69'
     SQLALCHEMY_TRACK_MODIFICATIONS = True
-    # simple mde  configurations
-    SIMPLEMDE_JS_IIFE = True
-    SIMPLEMDE_USE_CDN = True
 
 
 
