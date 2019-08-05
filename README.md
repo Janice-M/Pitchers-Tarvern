@@ -8,7 +8,7 @@
 
 
 ## Link to Live Site 
-https://pitchhere.herokuapp.com/
+https://greys-pitchtarvern.herokuapp.com/
 
 
 
@@ -58,8 +58,6 @@ https://pitchhere.herokuapp.com/
   * WTForms==2.2.1
 
 
-## Technical Requirements
-   This can be found in the specs.md file.
 ## User Stories
   * A user can see the pitches posted by other people
   * A user can eithr downvote or upvote on a pitch as long as they are signed in.
