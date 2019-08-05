@@ -4,9 +4,9 @@ from ..models import User
 from .forms import RegistrationForm, LoginForm
 from .. import db
 from flask_login import login_user, login_required, logout_user
-from ..email import mail_message
+from ..email import mail
+#....login
 
-#....
 @auth.route('/login',methods=['GET','POST'])
 def login():
     login_form = LoginForm()
@@ -20,7 +20,7 @@ def login():
 
     title = "Pitchers Tarvern Login"
     return render_template('auth/login.html',login_form = login_form,title=title)
-#....
+
 
 
 
