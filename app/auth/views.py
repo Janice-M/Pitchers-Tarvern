@@ -32,7 +32,7 @@ def register():
         db.session.add(user)
         db.session.commit()
         return redirect(url_for('auth.login'))
-        title = "New Pitcher in the Tarvernyyyyyy"
+        title = "New Pitcher in the Tarvern"
     return render_template('auth/register.html',registration_form = form)
 
 
